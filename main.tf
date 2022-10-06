@@ -1,6 +1,6 @@
 
 
-#Create and initialise a public GitHub Repository with MIT license and a Visual Studio .gitignore file (incl. issues and wiki)
+#Create and initialise a public GitHub Repository
 resource "github_repository" "repo" {
   name               = "github-as-code-repo"
   description        = "Github repo created with terraform"
@@ -12,7 +12,7 @@ resource "github_repository" "repo" {
   gitignore_template = "VisualStudio"
 }
 
-#Set default branch 'master'
+#Set default branch 'main'
 resource "github_branch_default" "main" {
   repository = github_repository.repo.name
   branch     = "main"
