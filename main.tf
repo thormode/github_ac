@@ -2,8 +2,8 @@
 
 #Create and initialise a public GitHub Repository with MIT license and a Visual Studio .gitignore file (incl. issues and wiki)
 resource "github_repository" "repo" {
-  name               = "Pwd9000-Demo-Repo-2022"
-  description        = "My awesome codebase"
+  name               = "github-as-code-repo"
+  description        = "Github repo created with terraform"
   visibility         = "public"
   has_issues         = true
   has_wiki           = true
